@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+   <!--@author Suhail Tailor-->
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="ch05-proj3.css" />
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p>let us know where you've been</p>
+</header>
+<main>
+   <section>
+      <form method="post" action="https://www.randyconnolly.com/tests/process.php">
+
+         <fieldset>
+            <legend>Photo Details</legend>
+         <div class="collection">
+            <div class="top">
+            <div class="box">
+               <label for="title">Title</label>
+               <input type="textbox"  id="title" placeholder="Give your photo a descritive name">
+            </div>
+            <div class="box">
+               <label for="description">Description</label>
+               <textarea name="description" id="description" cols="30" rows="5" placeholder="Adding a rich description will help with search results"></textarea>
+            </div>
+            </div>
+         <section id="middle">
+          <div id="left" >
+            <div class="box">
+               <label for="continent">Continent</label>
+              <select name="continent" id="continent" placeholder="Choose a continent">
+               <option value="North America">North America</option>
+               <option value="Europe">Europe</option>
+               <option value="Africa">Africa </option>
+              </select>
+            </div> 
+            <div class="box" >
+               <label for="country">Country</label>
+               <select name="country" id="country" placeholder="Choose country">
+                  <option value="Canada">Canada</option>
+                  <option value="France">France</option>
+                  <option value="Kenya">Kenya</option>
+
+               </select>
+            </div>
+            <div class="box">
+               <label for="city">City</label>
+               <select name="city" id="city" >
+                  <option value="Calgary">Calgary</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Nairobi">Nairobi</option>
+
+               </select>
+            </div>
+            </div>
+          
+          
+           <div id="copyrights">
+            <fieldset id="rights" class="box">
+             <caption>Copyright?</caption>
+               <div class="check">
+               <input type="radio" name=Copy id=all value="All rights reserved">
+               <label for="all">All rights reserved</label>
+               </div>
+               <div class="check">
+               <input type="radio" id="creative" name="Copy" value="Creative Commons">
+               <label for="creative"> Creative Commons</label>
+               </div>
+
+            </fieldset>
+            <fieldset id="Commons" class="box">
+               <caption>Creative Commons Types</caption>
+               <div class="check">
+               <input type="checkbox" name=Com id=attribution value="Attribution">
+               <label for="attribution">Attribution</label>
+               </div>
+               <div class="check">
+               <input type="checkbox" id="noncom" name="Com" value="Noncommercial">
+               <label for="noncom"> Noncommercial</label> 
+               </div>
+               <div class="check">
+               <input type="checkbox" id="No deriv" name="No deriv" value="No Derivative Works">
+               <label for="No deriv"> No Derivative Works</label> 
+               </div>
+
+            </fieldset> 
+
+           </div>
+         
+
+      </section>
+         <section>
+           <div class="accept">
+            <label for="acceptbox">I accept the software license </label> 
+            <input type="checkbox" id="acceptbox" name="acceptbox" value="I accept the software license">
+           </div>
+         </section>
+         <div class="bottom">
+         <section class="rate_color">
+           <div id="rating" class="box">
+            <label for="rate">Rate this photo </label> 
+            <select type="dropbox" id="rate" name="rate">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+            </select>
+           </div>
+           <div class="box">
+            <label for="c">Color collection</label>
+            <input type="color" name="c" id="c">
+           </div>
+         </section>
+         <section class="date_time" >
+           <div id="dateAndTime" class="box">
+            <label for="date">Date Taken:</label>
+            <input type="date" name="date" id="date">
+           
+           
+            <label for="time">Time Taken:</label>
+            <input type="time" name="time" id="time">
+           </div>
+           </section>
+         </div>
+
+          <div class="lower">
+           <div id="sub">
+            <button type="submit">Submit</button>
+           </div>
+           <div>
+            <button type="reset"> Clear Form</button>
+           </div>
+         </div>
+
+
+         </div>
+
+         </fieldset>
+      </form>       
+   </section>
+</main>  
+
+
+</body>
+</html>
